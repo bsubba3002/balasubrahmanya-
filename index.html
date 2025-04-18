@@ -9,24 +9,79 @@
   <style>
     body {
       font-family: 'Inter', sans-serif;
-      background-image: linear-gradient(120deg, #fdfbfb 0%, #ebedee 100%);
+      background-color: #f8f9fa; /* Light Gray */
+      color: #495057; /* Dark Gray */
     }
+
     header h1 {
-      text-shadow: 1px 1px 2px rgba(0,0,0,0.1);
+      font-size: 3.5rem;
+      font-weight: 800;
+      color: #003366; /* Dark Blue */
+      margin-bottom: 10px;
     }
+
+    header p {
+      font-size: 1.25rem;
+      color: #6c757d; /* Gray */
+    }
+
+    header a {
+      text-decoration: none;
+      color: #007bff; /* Light Blue */
+    }
+
+    header a:hover {
+      text-decoration: underline;
+      color: #0056b3; /* Darker Blue for hover */
+    }
+
     section {
-      transition: transform 0.3s ease-in-out;
+      margin-bottom: 40px;
+      padding: 30px;
+      background-color: #ffffff; /* White for sections */
+      border-radius: 12px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
     }
-    section:hover {
-      transform: translateY(-4px);
+
+    section h2 {
+      font-size: 2rem;
+      font-weight: 600;
+      color: #007bff; /* Light Blue */
     }
+
+    footer {
+      text-align: center;
+      margin-top: 40px;
+      padding: 20px;
+      background-color: #f8fcff; /* Dark Blue */
+      color: #0051ff; /* White text for footer */
+    }
+
+    a {
+      color: #007bff;
+      transition: color 0.3s;
+    }
+
+    a:hover {
+      color: #0056b3; /* Darker Blue on hover */
+    }
+
     ul li::before {
       content: '✦';
-      color: #3b82f6;
+      color: #e70808; /* Light Blue */
       display: inline-block;
       width: 1em;
       margin-left: -1em;
     }
+
+    section {
+      transition: transform 0.3s ease-in-out;
+    }
+
+    section:hover {
+      transform: translateY(-4px);
+    }
+
   </style>
 </head>
 <body class="text-gray-800">
@@ -75,7 +130,7 @@
       <section class="bg-white rounded-3xl shadow-xl p-6">
         <h2 class="text-2xl font-bold text-blue-600 mb-4">Technical Skills</h2>
         <div class="grid grid-cols-2 sm:grid-cols-3 gap-3 text-gray-700">
-          <span>Python</span><span>CC#</span><span>HTML/CSS/JavaScript</span>
+          <span>Python</span><span>C/C++/C#</span><span>HTML/CSS/JavaScript</span>
           <span>Flask</span><span>TensorFlow/Keras/PyTorch</span><span>Hugging Face</span>
           <span>BeautifulSoup</span><span>Apache Spark</span><span>Git</span>
           <span>Kubernetes</span><span>Unity</span><span>Flutter</span>
@@ -104,20 +159,18 @@
       </section>
 
       <section class="bg-white rounded-3xl shadow-xl p-6">
-        <section class="bg-white rounded-3xl shadow-xl p-6">
-  <h2 class="text-2xl font-bold text-blue-600 mb-4">Academic Activities & Hackathons</h2>
-  <ul class="text-gray-700 list-inside space-y-1">
-    <li>WE UNBOUND (VCET, Puttur) – 1st Place for a presentation on \"AI versus Humans\"</li>
-    <li>INNOVATION Hackathon (IEEE-DSATM) – 2nd Place for interactive VR Game and AR Book</li>
-    <li>Aetherion Hackathon (Canara College, Mangalore) – 2nd Place for an innovative solution</li>
-    <li>SRISHTI 2024 Hackathon (Atria Institute, Bangalore) – Developed a Traditional Food Recommendation Website</li>
-    <li>SANKALP Hackathon (AJ College, Mangalore) – Created a VR Game with immersive features and regional language support</li>
-    <li>IEEE R10 Hackathon (Dayananda Sagar, Bangalore) – Engineered a prototype Medical Device for healthcare accessibility</li>
-    <li>HAKOTSAVA Hackathon (Madwa Vadiraja Institute, Udupi) – Showcased the KalaChakra Website focused on AI-powered job recommendations</li>
-    <li>INDCON 25 (Anna University, Tamil Nadu) – Participated in the National Techno-Management Symposium engaging with industry leaders and academic peers</li>
-  </ul>
-</section>
-
+        <h2 class="text-2xl font-bold text-blue-600 mb-4">Academic Activities & Hackathons</h2>
+        <ul class="text-gray-700 list-inside space-y-1">
+          <li>WE UNBOUND (VCET, Puttur) – 1st Place for a presentation on "AI versus Humans"</li>
+          <li>INNOVATION Hackathon (IEEE-DSATM) – 2nd Place for interactive VR Game and AR Book</li>
+          <li>Aetherion Hackathon (Canara College, Mangalore) – 2nd Place for an innovative solution</li>
+          <li>SRISHTI 2024 Hackathon (Atria Institute, Bangalore) – Developed a Traditional Food Recommendation Website</li>
+          <li>SANKALP Hackathon (AJ College, Mangalore) – Created a VR Game with immersive features and regional language support</li>
+          <li>IEEE R10 Hackathon (Dayananda Sagar, Bangalore) – Engineered a prototype Medical Device for healthcare accessibility</li>
+          <li>HAKOTSAVA Hackathon (Madwa Vadiraja Institute, Udupi) – Showcased the KalaChakra Website focused on AI-powered job recommendations</li>
+          <li>INDCON 25 (Anna University, Tamil Nadu) – Participated in the National Techno-Management Symposium engaging with industry leaders and academic peers</li>
+        </ul>
+      </section>
 
       <section class="bg-white rounded-3xl shadow-xl p-6">
         <h2 class="text-2xl font-bold text-blue-600 mb-4">Personal Details</h2>
