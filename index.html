@@ -9,97 +9,45 @@
   <style>
     body {
       font-family: 'Inter', sans-serif;
-      background-color: #f8f9fa; /* Light Gray */
-      color: #495057; /* Dark Gray */
+      background-image: linear-gradient(120deg, #fdfbfb 0%, #ebedee 100%);
     }
-
     header h1 {
-      font-size: 3.5rem;
-      font-weight: 800;
-      color: #003366; /* Dark Blue */
-      margin-bottom: 10px;
+      text-shadow: 1px 1px 2px rgba(0,0,0,0.1);
     }
-
-    header p {
-      font-size: 1.25rem;
-      color: #6c757d; /* Gray */
-    }
-
-    header a {
-      text-decoration: none;
-      color: #007bff; /* Light Blue */
-    }
-
-    header a:hover {
-      text-decoration: underline;
-      color: #0056b3; /* Darker Blue for hover */
-    }
-
     section {
-      margin-bottom: 40px;
-      padding: 30px;
-      background-color: #ffffff; /* White for sections */
-      border-radius: 12px;
-      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+      transition: transform 0.3s ease-in-out;
     }
-
-    section h2 {
-      font-size: 2rem;
-      font-weight: 600;
-      color: #007bff; /* Light Blue */
+    section:hover {
+      transform: translateY(-4px);
     }
-
-    footer {
-      text-align: center;
-      margin-top: 40px;
-      padding: 20px;
-      background-color: #f8fcff; /* Dark Blue */
-      color: #0051ff; /* White text for footer */
-    }
-
-    a {
-      color: #007bff;
-      transition: color 0.3s;
-    }
-
-    a:hover {
-      color: #0056b3; /* Darker Blue on hover */
-    }
-
     ul li::before {
       content: '✦';
-      color: #e70808; /* Light Blue */
+      color: #3b82f6;
       display: inline-block;
       width: 1em;
       margin-left: -1em;
     }
-
-    section {
-      transition: transform 0.3s ease-in-out;
-    }
-
-    section:hover {
-      transform: translateY(-4px);
-    }
-
   </style>
 </head>
 <body class="text-gray-800">
-  <div class="max-w-4xl mx-auto px-4 py-8">
+  <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
     <!-- Header -->
     <header class="text-center mb-12">
-      <h1 class="text-5xl font-extrabold text-blue-700">Balasubrahmanya</h1>
-      <p class="text-xl text-gray-600 mt-2">Aspiring AI/ML Engineer</p>
-      <div class="mt-3 text-sm text-gray-500">
-        <span>Email: balasubrahmanya3002@gmail.com</span> • 
-        <span>Phone: 7019079848</span> • 
+      <h1 class="text-4xl sm:text-5xl font-extrabold text-blue-700">Balasubrahmanya</h1>
+      <p class="text-lg sm:text-xl text-gray-600 mt-2">Aspiring AI/ML Engineer</p>
+      <div class="mt-3 text-sm text-gray-500 flex flex-col sm:flex-row gap-1 sm:gap-3 items-center justify-center text-center">
+        <span>Email: balasubrahmanya3002@gmail.com</span> 
+        <span>•</span> 
+        <span>Phone: 7019079848</span> 
+        <span>•</span> 
         <a href="https://github.com/bsubba3002" class="underline text-blue-500">GitHub</a>
       </div>
     </header>
 
     <!-- Sections -->
     <main class="space-y-10">
-      <section class="bg-white rounded-3xl shadow-xl p-6">
+      <!-- Summary -->
+      <section class="bg-white rounded-3xl shadow-xl p-6 sm:p-8">
         <h2 class="text-2xl font-bold text-blue-600 mb-4">Professional Summary</h2>
         <p class="text-gray-700">
           Aspiring AI/ML Engineer with a strong foundation in Artificial Intelligence and Machine 
@@ -110,7 +58,8 @@
         </p>
       </section>
 
-      <section class="bg-white rounded-3xl shadow-xl p-6">
+      <!-- Education -->
+      <section class="bg-white rounded-3xl shadow-xl p-6 sm:p-8">
         <h2 class="text-2xl font-bold text-blue-600 mb-4">Education</h2>
         <ul class="text-gray-700 space-y-2">
           <li><strong>BE in AI & ML</strong> – Vivekananda College of Engineering and Technology, Puttur (2026)</li>
@@ -119,7 +68,8 @@
         </ul>
       </section>
 
-      <section class="bg-white rounded-3xl shadow-xl p-6">
+      <!-- Internships -->
+      <section class="bg-white rounded-3xl shadow-xl p-6 sm:p-8">
         <h2 class="text-2xl font-bold text-blue-600 mb-4">Internships</h2>
         <ul class="text-gray-700 space-y-2">
           <li><strong>Project Management Intern</strong> – Blue Planet Infosolutions Pvt. Ltd (Dec 2024 – Present)</li>
@@ -127,7 +77,8 @@
         </ul>
       </section>
 
-      <section class="bg-white rounded-3xl shadow-xl p-6">
+      <!-- Technical Skills -->
+      <section class="bg-white rounded-3xl shadow-xl p-6 sm:p-8">
         <h2 class="text-2xl font-bold text-blue-600 mb-4">Technical Skills</h2>
         <div class="grid grid-cols-2 sm:grid-cols-3 gap-3 text-gray-700">
           <span>Python</span><span>C/C++/C#</span><span>HTML/CSS/JavaScript</span>
@@ -137,7 +88,8 @@
         </div>
       </section>
 
-      <section class="bg-white rounded-3xl shadow-xl p-6">
+      <!-- Projects -->
+      <section class="bg-white rounded-3xl shadow-xl p-6 sm:p-8">
         <h2 class="text-2xl font-bold text-blue-600 mb-4">Projects</h2>
         <ul class="text-gray-700 space-y-1">
           <li>SKILL-SYNC – AI/ML Job Recommendation Website</li>
@@ -147,7 +99,8 @@
         </ul>
       </section>
 
-      <section class="bg-white rounded-3xl shadow-xl p-6">
+      <!-- Certifications -->
+      <section class="bg-white rounded-3xl shadow-xl p-6 sm:p-8">
         <h2 class="text-2xl font-bold text-blue-600 mb-4">Certifications</h2>
         <ul class="text-gray-700 list-inside space-y-1">
           <li>Web Dev Bootcamp (2024)</li>
@@ -158,21 +111,23 @@
         </ul>
       </section>
 
-      <section class="bg-white rounded-3xl shadow-xl p-6">
+      <!-- Hackathons -->
+      <section class="bg-white rounded-3xl shadow-xl p-6 sm:p-8">
         <h2 class="text-2xl font-bold text-blue-600 mb-4">Academic Activities & Hackathons</h2>
         <ul class="text-gray-700 list-inside space-y-1">
           <li>WE UNBOUND (VCET, Puttur) – 1st Place for a presentation on "AI versus Humans"</li>
           <li>INNOVATION Hackathon (IEEE-DSATM) – 2nd Place for interactive VR Game and AR Book</li>
           <li>Aetherion Hackathon (Canara College, Mangalore) – 2nd Place for an innovative solution</li>
-          <li>SRISHTI 2024 Hackathon (Atria Institute, Bangalore) – Developed a Traditional Food Recommendation Website</li>
-          <li>SANKALP Hackathon (AJ College, Mangalore) – Created a VR Game with immersive features and regional language support</li>
-          <li>IEEE R10 Hackathon (Dayananda Sagar, Bangalore) – Engineered a prototype Medical Device for healthcare accessibility</li>
-          <li>HAKOTSAVA Hackathon (Madwa Vadiraja Institute, Udupi) – Showcased the KalaChakra Website focused on AI-powered job recommendations</li>
-          <li>INDCON 25 (Anna University, Tamil Nadu) – Participated in the National Techno-Management Symposium engaging with industry leaders and academic peers</li>
+          <li>SRISHTI 2024 Hackathon – Traditional Food Recommendation Website</li>
+          <li>SANKALP Hackathon – VR Game with regional language support</li>
+          <li>IEEE R10 Hackathon – Prototype Medical Device for accessibility</li>
+          <li>HAKOTSAVA Hackathon – KalaChakra: AI-powered job recommendations</li>
+          <li>INDCON 25 – National Techno-Management Symposium at Anna University</li>
         </ul>
       </section>
 
-      <section class="bg-white rounded-3xl shadow-xl p-6">
+      <!-- Personal Details -->
+      <section class="bg-white rounded-3xl shadow-xl p-6 sm:p-8">
         <h2 class="text-2xl font-bold text-blue-600 mb-4">Personal Details</h2>
         <ul class="text-gray-700 space-y-1">
           <li><strong>DOB:</strong> 23 Dec 2003</li>
